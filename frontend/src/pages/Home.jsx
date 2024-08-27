@@ -1,16 +1,14 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/screens/header"
 import { ArrowRight } from "lucide-react"
-import QTH from '../assets/qth.png'
 
 export default function Home() {
     return (
         <>
             <Header />
             <main className="flex space-y-4 items-center justify-center">
-                <div className="grid grid-cols-1 items-start justify-between gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 items-start justify-between text-white gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     <Card>
                         <CardContent className="flex flex-col gap-4 p-6">
                             <div>
@@ -27,12 +25,7 @@ export default function Home() {
                     <Card>
                         <CardContent className="flex flex-col gap-4 p-6">
                             <div>
-                                <div className="flex flex-row gap-4">
-                                    <h3 className="text-xl font-semibold">QTH</h3>
-                                    <Avatar>
-                                        <AvatarImage src={QTH} />
-                                    </Avatar>
-                                </div>
+                                <h3 className="text-xl font-semibold">QTH</h3>
                                 <p className="text-muted-foreground">Gerenciador de rádios.</p>
                             </div>
                             <Button asChild>

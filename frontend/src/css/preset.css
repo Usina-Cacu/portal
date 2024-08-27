@@ -7,7 +7,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    background: linear-gradient(-45deg, #344c83, #2b3f6e, #54ab54, #43846d, #4b9464, #4c9c5c);
+    background: linear-gradient(-45deg,  #344c83, #2b3f6e, #54ab54, #43846d, #4b9464, #4c9c5c);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     height: 100vh;
@@ -16,7 +16,7 @@ body {
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
-}
+    }
 
     50% {
         background-position: 100% 50%;
