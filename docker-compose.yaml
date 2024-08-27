@@ -1,0 +1,17 @@
+services:
+  frontend-portal:
+    container_name: frontend-portal
+    networks:
+      - srv-network
+    build: ./frontend
+    restart: always
+    ports:
+      - 4000:4000
+    expose:
+      - 4000:4000
+    volumes:
+      - ./frontend:/usr/app
+
+networks:
+  srv-network:
+   external: true
