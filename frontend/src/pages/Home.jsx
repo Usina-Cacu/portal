@@ -12,6 +12,15 @@ export default function Home() {
                     <Card>
                         <CardContent className="flex flex-col gap-4 p-6">
                             <div>
+                                <h3 className="text-xl font-semibold">Aspen</h3>
+                                <p className="text-muted-foreground">Gerenciador de bags.</p>
+                            </div>
+                            <Button disabled>Em breve</Button>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardContent className="flex flex-col gap-4 p-6">
+                            <div>
                                 <h3 className="text-xl font-semibold">LDB (Lei do Bem)</h3>
                                 <p className="text-muted-foreground">Gerenciador de projetos.</p>
                             </div>
@@ -38,10 +47,14 @@ export default function Home() {
                     <Card>
                         <CardContent className="flex flex-col gap-4 p-6">
                             <div>
-                                <h3 className="text-xl font-semibold">Aspen</h3>
-                                <p className="text-muted-foreground">Gerenciador de bags.</p>
+                                <h3 className="text-xl font-semibold">QR Code</h3>
+                                <p className="text-muted-foreground">Gerador de QR Codes.</p>
                             </div>
-                            <Button disabled>Em breve</Button>
+                            <Button asChild>
+                                <a href="http://192.168.168.151:3003">
+                                    Acessar QR Code <ArrowRight />
+                                </a>
+                            </Button>
                         </CardContent>
                     </Card>
                 </div>
