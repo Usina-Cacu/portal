@@ -15,7 +15,11 @@ export default function Home() {
                                 <h3 className="text-xl font-semibold">Aspen</h3>
                                 <p className="text-muted-foreground">Gerenciador de bags.</p>
                             </div>
-                            <Button disabled>Em breve</Button>
+                            <Button asChild>
+                                <a href="http://192.168.168.151:3002">
+                                    Acessar Aspen <ArrowRight />
+                                </a>
+                            </Button>
                         </CardContent>
                     </Card>
                     <Card>
