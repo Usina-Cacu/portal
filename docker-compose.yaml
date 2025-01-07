@@ -1,16 +1,16 @@
 services:
-  frontend-portal:
-    container_name: frontend-portal
+  portal:
+    container_name: portal
     networks:
       - srv-network
-    build: ./frontend
+    build: ./
     restart: always
     ports:
       - 4000:4000
     expose:
       - 4000:4000
     volumes:
-      - ./frontend:/usr/app
+      - ./portal:/usr/app
 
 networks:
   srv-network:
