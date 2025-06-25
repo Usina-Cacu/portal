@@ -1,13 +1,160 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logocacu.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portal de Sistemas - Caçu</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- idioma corrigido para o público -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <title>Usina Cacu</title>
+</head>
+
+<body>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <!-- header -->
+    <header class="header">
+        <div>
+            <img src="assets/copercaculogo.png" alt="Logo da Usina Cacu" class="header-logo">
+        </div>
+        <nav class="header-menu">
+            <a href="#inicio">Início</a>
+            <hr />
+            <a href="#sobre">Sobre nós</a>
+            <hr />
+            <a href="#produtos">Produtos</a>
+            <hr />
+            <a href="#servicos">Serviços</a>
+            <hr />
+            <a href="#contatos">Contatos</a>
+            <hr />
+            <a href="vagas.html">Vagas</a>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="content" id="inicio">
+
+        <!-- carrossel -->
+        <section class="carrossel">
+            <img src="assets/cacu.jpeg" alt="Imagem aérea da usina" class="slide">
+            <img src="assets/senai.png" alt="Estudantes do Senai" class="slide">
+            <img src="assets/rh.png" alt="Cacu sendo premiada" class="slide">
+            <img src="assets/cacu.jpg" alt="Vista panorâmica da usina" class="slide">
+            <img src="assets/adm.png" alt="Cacu sendo premiada" class="slide">
+        </section>
+
+        <!-- sobre -->
+        <section class="sobre" id="sobre">
+            <h2>QUEM SOMOS?</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus nisi. Sed quis augue mattis purus
+                sollicitudin molestie at nec arcu. Proin sed feugiat elit, non mollis lectus. Sed ullamcorper sapien
+                quis erat posuere, in luctus dui sodales. Nam sodales, mauris nec posuere consequat, ante nunc
+                ullamcorper est, quis eleifend mauris lectus at turpis. Donec placerat dapibus maximus. Donec et eros
+                tortor. Phasellus mauris nulla, auctor nec sollicitudin consequat, mollis et erat. Phasellus nisl
+                tellus, rhoncus luctus rhoncus blandit, iaculis eu massa.
+
+                <br>
+
+                Aenean ac ligula imperdiet, molestie justo aliquet, eleifend mauris. Vestibulum fringilla, quam at
+                pulvinar mollis, risus orci pellentesque diam, non convallis nisl diam in dolor. Phasellus magna leo,
+                finibus id ex et, luctus gravida justo. Nulla ac porttitor turpis. Praesent eget vehicula neque. Integer
+                ultrices enim libero, nec tristique eros consectetur sed. In at justo et sapien finibus posuere id in
+                lorem. Mauris ultrices mi lacus, vitae rhoncus est egestas sit amet. Donec at maximus neque. Proin nec
+                ipsum augue. Integer molestie lobortis tortor, ac hendrerit dui vehicula sed.
+
+                <br>
+
+                Aenean vitae vulputate ante, ut pretium arcu. Vivamus ac diam eget nisi sodales efficitur. Aenean
+                pulvinar, leo id dignissim elementum, ante felis ultrices elit, at sodales ante ex sed leo. Aliquam
+                laoreet luctus risus ut rhoncus. Curabitur vel lacinia nulla. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec et massa a orci mattis finibus eget vel justo. Etiam ligula elit, facilisis
+                dignissim laoreet nec, placerat tempus sapien. Phasellus vel dolor augue. Maecenas semper hendrerit
+                bibendum. Phasellus non metus tellus. Vestibulum eu blandit erat. Praesent bibendum placerat tellus, ut
+                consequat quam consectetur et.
+            </p>
+
+            <h2>O QUE NOS MOVE?</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus nisi. Sed quis augue mattis purus
+                sollicitudin molestie at nec arcu. Proin sed feugiat elit, non mollis lectus. Sed ullamcorper sapien
+                quis erat posuere, in luctus dui sodales. Nam sodales, mauris nec posuere consequat, ante nunc
+                ullamcorper est, quis eleifend mauris lectus at turpis. Donec placerat dapibus maximus. Donec et eros
+                tortor. Phasellus mauris nulla, auctor nec sollicitudin consequat, mollis et erat. Phasellus nisl
+                tellus, rhoncus luctus rhoncus blandit, iaculis eu massa.
+
+                <br>
+
+                Aenean ac ligula imperdiet, molestie justo aliquet, eleifend mauris. Vestibulum fringilla, quam at
+                pulvinar mollis, risus orci pellentesque diam, non convallis nisl diam in dolor. Phasellus magna leo,
+                finibus id ex et, luctus gravida justo. Nulla ac porttitor turpis. Praesent eget vehicula neque. Integer
+                ultrices enim libero, nec tristique eros consectetur sed. In at justo et sapien finibus posuere id in
+                lorem. Mauris ultrices mi lacus, vitae rhoncus est egestas sit amet. Donec at maximus neque. Proin nec
+                ipsum augue. Integer molestie lobortis tortor, ac hendrerit dui vehicula sed.
+
+                <br>
+
+                Aenean vitae vulputate ante, ut pretium arcu. Vivamus ac diam eget nisi sodales efficitur. Aenean
+                pulvinar, leo id dignissim elementum, ante felis ultrices elit, at sodales ante ex sed leo. Aliquam
+                laoreet luctus risus ut rhoncus. Curabitur vel lacinia nulla. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec et massa a orci mattis finibus eget vel justo. Etiam ligula elit, facilisis
+                dignissim laoreet nec, placerat tempus sapien. Phasellus vel dolor augue. Maecenas semper hendrerit
+                bibendum. Phasellus non metus tellus. Vestibulum eu blandit erat. Praesent bibendum placerat tellus, ut
+                consequat quam consectetur et.
+            </p>
+        </section>
+
+
+        <!-- produtos -->
+        <section class="produtos" id="produtos">
+            <!-- conteúdo futuro -->
+            <h1>PRODUTOS</h1>
+        </section>
+
+        <!-- serviços -->
+        <section class="servicos" id="servicos">
+            <h1>SERVIÇOS</h1>
+            <div class="web">
+                <h2>WEB</h2>
+                <div>
+                    <a href="http://82.25.68.156:3000" target="_blank">
+                        <img src="assets/ldb.png" alt="Logo do sistema LDB">
+                        <p>LDB</p>
+                    </a>
+                    <a href="http://82.25.68.156:3001" target="_blank">
+                        <img src="assets/qth.png" alt="Logo do sistema QTH">
+                        <p>QTH</p>
+                    </a>
+                    <a href="http://82.25.68.156:3002" target="_blank">
+                        <img src="assets/aspen.png" alt="Logo do sistema ASPEN">
+                        <p>ASPEN</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contatos">
+        <div class="footer-content">
+            <p>&copy; 2025 Cacu Comércio e Indústria de Açúcar e Álcool Ltda. Todos os direitos reservados.</p>
+            <p>
+                <a href="mailto:contato@usinacacu.com.br" target="_blank">contato@usinacacu.com.br</a> |
+                <a href="tel:+556434030619" target="_blank">+55 (64) 3403-0619</a> | 
+                <a href="https://www.linkedin.com/company/usinaca%C3%A7u/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+
+            document.getElementById("progress-bar").style.width = scrollPercent + "%";
+        });
+    </script>
+</body>
+
 </html>
