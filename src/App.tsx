@@ -4,6 +4,7 @@ import { Card, CardContent } from './components/ui/card';
 import { Button } from './components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Snowfall from 'react-snowfall';
+import { isWithinInterval } from 'date-fns';
 
 export default function App() {
   const host = 'http://82.25.68.156';
@@ -15,9 +16,11 @@ export default function App() {
         <h1 className="text-3xl font-sans font-semibold">Portal de Sistemas</h1>
       </header>
 
-      <Snowfall
-        color='white'
-      />
+      {isWithinInterval(new Date(), {
+        start: `${new Date().getFullYear()}-12-23`,
+        end: `${new Date().getFullYear() + 1}-01-01`
+      }) && <Snowfall color='white' />}
+
       <div className="w-full h-full flex flex-col items-center justify-center p-5">
         <div className="grid grid-cols-1 justify-between text-white gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
