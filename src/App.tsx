@@ -19,7 +19,7 @@ export default function App() {
       {isWithinInterval(new Date(), {
         start: `${new Date().getFullYear()}-12-23`,
         end: `${new Date().getFullYear() + 1}-01-01`
-      }) && <Snowfall color='white' style={{ opacity: 75 }} />}
+      }) && <Snowfall color='white' style={{ opacity: 70 }} />}
 
       <div className="w-full h-full flex flex-col items-center justify-center p-5">
         <div className="grid grid-cols-1 justify-between text-white gap-4 sm:grid-cols-2 lg:grid-cols-3">
