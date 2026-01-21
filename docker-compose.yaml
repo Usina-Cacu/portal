@@ -3,8 +3,10 @@ services:
     container_name: portal
     networks:
       - srv-network
-    build: ./
-    restart: always
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
     ports:
       - 4000:4000
     volumes:
